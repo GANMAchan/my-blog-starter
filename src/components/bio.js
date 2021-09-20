@@ -32,7 +32,8 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <StaticImage
+      {/* いがにbioに追加したい画像を設定 */}
+      {/* <StaticImage
         className="bio-avatar"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
@@ -41,14 +42,10 @@ const Bio = () => {
         height={50}
         quality={95}
         alt="Profile picture"
-      />
+      /> */}
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          メモや日記
         </p>
       )}
     </div>
